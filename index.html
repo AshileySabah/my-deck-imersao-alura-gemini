@@ -26,34 +26,41 @@
         </p>
       </section>
 
-      <section id="secao-tipo">
-        <h2>Tipo</h2>
-        <ul>
-          <li>
-            <div class="card" id="card-terreno">
-                <span>Terreno</span>
-            </div>
-            <button>Escolher</button>
-          </li>
-          <li>
-            <div class="card" id="card-criatura">
-                <span>Criatura</span>
-            </div>
-            <button>Escolher</button>
-          </li>
-          <li>
-            <div class="card" id="card-magia">
-                <span>Magia</span>
-            </div>
-            <button>Escolher</button>
-          </li>
-          <li>
-            <div class="card" id="card-artefato">
-                <span>Artefato</span>
-            </div>
-            <button>Escolher</button>
-          </li>
-        </ol>
+      <section>
+        <form>
+          <label for="tipo">Tipo:</label><br />
+          <select id="tipo" name="tipo">
+            <option value="">---</option>
+            <option value="Terreno">Terreno</option>
+            <option value="Criatura">Criatura</option>
+            <option value="Magia">Magia</option>
+            <option value="Artefato">Artefato</option>
+          </select>
+          <br /><br />
+
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" />
+          <br /><br />
+
+          <label for="descricao">Descrição:</label><br />
+          <textarea
+            id="descricao"
+            name="descricao"
+            rows="4"
+            cols="50"
+          ></textarea>
+          <br /><br />
+
+          <label for="dano">Dano:</label><br />
+          <input type="number" id="dano" name="dano" />
+          <br /><br />
+
+          <label for="ataque">Ataque:</label><br />
+          <input type="number" id="ataque" name="ataque" />
+          <br /><br />
+
+          <input type="submit" value="Criar" />
+        </form>
       </section>
     </div>
   </body>
