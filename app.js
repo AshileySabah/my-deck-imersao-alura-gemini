@@ -24,7 +24,7 @@ function pesquisar() {
       html += `
         <div class="item-result ${dado.tipo}">
           <div>
-            <img src="img/logo.png" alt="Carta ${dado.nome}" />
+            <img src="${dado.imagem}" alt="Carta ${dado.nome}" />
             <strong>${dado.nome}</strong>
             <p>${dado.descricao}</p>
           </div>

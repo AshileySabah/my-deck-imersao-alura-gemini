@@ -6,6 +6,7 @@ let dados = [
       "Um vulcão ativo que cospe lava incandescente, oferecendo mana vermelha e um campo de batalha infernal.",
     dano: 0,
     defesa: 0,
+    imagem: "img/montanha_fumegante.jpg",
   },
   {
     tipo: "Criatura",
@@ -14,6 +15,7 @@ let dados = [
       "Uma criatura mítica que renasce das cinzas, mais forte a cada vez que é derrotada. Suas chamas purificadoras consomem seus inimigos.",
     dano: 10,
     defesa: 1000,
+    imagem: "img/fenix_imortal.jpg",
   },
   {
     tipo: "Magia",
@@ -22,6 +24,7 @@ let dados = [
       "Raios racham o céu, atingindo todos os inimigos em campo com um estrondo ensurdecedor, causando dano e paralisando-os por um breve momento.",
     dano: 10,
     defesa: 0,
+    imagem: "img/tempestade_eletrica.jpg",
   },
   {
     tipo: "Artefato",
@@ -30,5 +33,6 @@ let dados = [
       "Forjado em um tempo antigo, este escudo mágico protege seu portador de qualquer mal, dissipando feitiços e repelindo ataques.",
     dano: 0,
     defesa: 4,
+    imagem: "img/escudo_da_fe.jpg",
   },
 ];
