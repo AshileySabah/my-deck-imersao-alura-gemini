@@ -26,32 +26,29 @@ h2 {
   padding-right: 10px;
 }
 
-section {
+#secao-tipo {
+}
+
+#secao-tipo ul li {
+  width: 100%;
+}
+
+#secao-tipo ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.card {
+  width: 60%;
+  height: 200px;
+  border-radius: 10px;
   background-color: white;
-  padding: 20px;
-  border-radius: 20px;
-  border: 2px solid black;
+  border: 1px solid black;
+}
+
+section h2 {
   margin-bottom: 20px;
-}
-
-section p {
-  text-align: justify;
-}
-
-#content-introducao {
-  display: flex;
-  justify-content: start;
-}
-
-#content-introducao section {
-  width: 50%;
-}
-
-#content-como-usar {
-  display: flex;
-  justify-content: end;
-}
-
-#content-como-usar section {
-  width: 50%;
 }
