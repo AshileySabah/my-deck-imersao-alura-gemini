@@ -1,6 +1,7 @@
 function pesquisar() {
   const tipo = document.getElementById("tipo").value;
   const nome = document.getElementById("nome").value.toLowerCase();
+  const descricao = document.getElementById("descricao").value.toLowerCase();
   const dano = document.getElementById("dano").value;
   const defesa = document.getElementById("defesa").value;
 
@@ -11,6 +12,7 @@ function pesquisar() {
     return (
       (tipo === "" || dado.tipo === tipo) &&
       (nome === "" || dado.nome.toLowerCase().includes(nome)) &&
+      (descricao === "" || dado.descricao.toLowerCase().includes(descricao)) &&
       (dano === "" || dado.dano == dano) &&
       (defesa === "" || dado.defesa == defesa)
     );
