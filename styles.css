@@ -43,38 +43,6 @@ header img {
   text-align: center;
 }
 
-/* Estiliza cada item de resultado */
-.item-resultado {
-  background: #ffffff; /* Cor de fundo dos itens */
-  border-radius: 0.6rem; /* Borda arredondada */
-  padding: 1rem; /* Espaçamento interno */
-  margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-}
-
-/* Estiliza os títulos dentro dos itens de resultado */
-.item-resultado h2 {
-  font-size: 1.5rem; /* Tamanho da fonte */
-  color: #222831; /* Cor do texto */
-}
-
-/* Estiliza os links dentro dos itens de resultado */
-.item-resultado a {
-  text-decoration: none; /* Remove o sublinhado padrão dos links */
-  color: #30475e; /* Cor do texto dos links */
-}
-
-/* Estiliza os links quando são passados o mouse sobre */
-.item-resultado a:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-/* Estiliza a descrição meta dentro dos itens de resultado */
-.descricao-meta {
-  color: #45474b; /* Cor do texto */
-  margin: 0.5rem 0; /* Margem acima e abaixo */
-}
-
 footer {
   text-align: center;
   padding: 10px 0;
@@ -145,4 +113,53 @@ label {
 
 #button-search:hover {
   background-color: black;
+}
+
+#section-results {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item-result {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 6px;
+  width: 200px;
+  height: 290px;
+  text-align: justify;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-result img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.item-result.Terreno {
+  background-color: green;
+}
+
+.item-result.Criatura {
+  background-color: red;
+}
+
+.item-result.Magia {
+  background-color: purple;
+}
+
+.item-result.Artefato {
+  background-color: brown;
+}
+
+.item-result p {
+  margin: 0;
+}
+
+.item-result-points {
+  display: flex;
+  justify-content: end;
 }

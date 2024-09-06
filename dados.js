@@ -1,20 +1,34 @@
 let dados = [
   {
-    titulo: "Rayssa Leal",
+    tipo: "Terreno",
+    nome: "Montanha Fumegante",
     descricao:
-      "Rayssa Leal, a Fadinha, é uma skatista brasileira que conquistou o mundo com seu talento e carisma. Aos poucos anos, ela já coleciona títulos e inspira milhões de jovens.",
-    link: "https://pt.wikipedia.org/wiki/Rayssa_Leal",
+      "Um vulcão ativo que cospe lava incandescente, oferecendo mana vermelha e um campo de batalha infernal.",
+    dano: 0,
+    defesa: 0,
   },
   {
-    titulo: "Beatriz Souza",
+    tipo: "Criatura",
+    nome: "Fênix Imortal",
     descricao:
-      "Beatriz Souza é uma judoca brasileira que se destacou nos Jogos Olímpicos de Paris 2024, conquistando a medalha de ouro e inspirando novas gerações de atletas.",
-    link: "https://pt.wikipedia.org/wiki/Beatriz_Souza",
+      "Uma criatura mítica que renasce das cinzas, mais forte a cada vez que é derrotada. Suas chamas purificadoras consomem seus inimigos.",
+    dano: 10,
+    defesa: 1000,
   },
   {
-    titulo: "Rebeca Andrade",
+    tipo: "Magia",
+    nome: "Tempestade Elétrica",
     descricao:
-      "Rebeca Andrade é uma ginasta brasileira que conquistou o mundo com suas acrobacias e força. Aos poucos anos, ela já coleciona títulos e é considerada uma das maiores ginastas da história do Brasil.",
-    link: "https://pt.wikipedia.org/wiki/Rebeca_Andrade",
+      "Raios racham o céu, atingindo todos os inimigos em campo com um estrondo ensurdecedor, causando dano e paralisando-os por um breve momento.",
+    dano: 10,
+    defesa: 0,
+  },
+  {
+    tipo: "Artefato",
+    nome: "Escudo da Fé",
+    descricao:
+      "Forjado em um tempo antigo, este escudo mágico protege seu portador de qualquer mal, dissipando feitiços e repelindo ataques.",
+    dano: 0,
+    defesa: 4,
   },
 ];
