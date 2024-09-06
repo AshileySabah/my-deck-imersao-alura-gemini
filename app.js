@@ -1,13 +1,9 @@
 function pesquisar() {
-  // Obtém a seção HTML onde os resultados serão exibidos
-  let section = document.getElementById("resultados-pesquisa");
+  let section = document.getElementById("search-results");
 
-  // Inicializa uma string vazia para armazenar os resultados
   let resultados = "";
 
-  // Itera sobre cada dado da lista de dados
   for (let dado of dados) {
-    // Cria um novo elemento HTML para cada resultado
     resultados += `
           <div class="item-resultado">
               <h2>
@@ -19,6 +15,5 @@ function pesquisar() {
       `;
   }
 
-  // Atribui os resultados gerados à seção HTML
   section.innerHTML = resultados;
 }

@@ -43,16 +43,6 @@ header img {
   text-align: center;
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
-.resultados-pesquisa {
-  width: 60rem; /* Largura máxima da caixa de resultados */
-  height: 46vh; /* Altura máxima da caixa de resultados */
-  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-  margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-  padding: 1rem; /* Espaçamento interno */
-  border-radius: 0.6rem; /* Borda arredondada */
-}
-
 /* Estiliza cada item de resultado */
 .item-resultado {
   background: #ffffff; /* Cor de fundo dos itens */
@@ -85,7 +75,6 @@ header img {
   margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
-/* Estiliza o rodapé da página */
 footer {
   text-align: center;
   padding: 10px 0;
