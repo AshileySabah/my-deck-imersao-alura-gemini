@@ -1,67 +1,28 @@
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
-    <title>MyDeck</title>
+    <title>Olimpíadas</title>
   </head>
+
   <body>
-    <header id="navigation">
-      <img src="img/logo.png" alt="Logo do MyDeck - Baralhos" />
-      <h1>MyDeck</h1>
+    <header>
+      <h1>Atletas do Brasil</h1>
     </header>
-
-    <div id="content-introducao">
+    <main>
       <section>
-        <h2>Bem-vindo ao MyDeck, Criador de Cartas!</h2>
-        <p>
-          Desperte seu lado criativo e crie cartas incríveis. Com nosso criador
-          de cartas, você pode transformar suas ideias em realidade.<br />Seja
-          para criar figurinhas personalizadas dos seus amigos ou para
-          desenvolver um TCG épico, as possibilidades são infinitas.<br />Nossa
-          ferramenta intuitiva permite que você personalize cada detalhe das
-          suas cartas, desde a arte até as regras.<br />Solte a imaginação e
-          comece a criar agora mesmo!
-        </p>
+        <input type="text" placeholder="Digite o nome do atleta" />
+        <button onclick="pesquisar()">Pesquisar</button>
       </section>
-
-      <section>
-        <form>
-          <label for="tipo">Tipo:</label><br />
-          <select id="tipo" name="tipo">
-            <option value="">---</option>
-            <option value="Terreno">Terreno</option>
-            <option value="Criatura">Criatura</option>
-            <option value="Magia">Magia</option>
-            <option value="Artefato">Artefato</option>
-          </select>
-          <br /><br />
-
-          <label for="nome">Nome:</label><br />
-          <input type="text" id="nome" name="nome" />
-          <br /><br />
-
-          <label for="descricao">Descrição:</label><br />
-          <textarea
-            id="descricao"
-            name="descricao"
-            rows="4"
-            cols="50"
-          ></textarea>
-          <br /><br />
-
-          <label for="dano">Dano:</label><br />
-          <input type="number" id="dano" name="dano" />
-          <br /><br />
-
-          <label for="ataque">Ataque:</label><br />
-          <input type="number" id="ataque" name="ataque" />
-          <br /><br />
-
-          <input type="submit" value="Criar" />
-        </form>
-      </section>
-    </div>
+      <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+    <footer>
+      <p>2024 - Atletas do Brasil. Todos os direitos reservados</p>
+      <p>Entre em contato pelo email: guilherme@atletas.com.br</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
