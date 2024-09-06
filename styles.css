@@ -5,11 +5,18 @@
   font-family: "Bungee Shade", sans-serif;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: #dddddd;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header,
@@ -38,13 +45,15 @@ h2 {
   text-align: center;
 }
 
-main {
-  padding-top: 20px;
-  height: calc(100vh - 162px);
+#section-search {
+  margin-bottom: 20px;
 }
 
-form {
+main {
   padding: 20px;
+  flex: 1;
+  background-color: #f0f0f0;
+  overflow-y: auto;
 }
 
 .form-row {
@@ -112,7 +121,7 @@ select {
 
 #section-results {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .item-result {
